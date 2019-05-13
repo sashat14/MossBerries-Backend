@@ -9,7 +9,7 @@ server.use(express.json());
 server.use(cors());
 server.use(helmet());
 
-configureRoutes(server);
+//configureRoutes(server);
 
 module.exports = {
   server
