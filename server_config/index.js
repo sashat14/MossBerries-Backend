@@ -1,4 +1,4 @@
-const { server } = require('./config/server.js');
+const { server } = require('./server.js');
 
 
 
