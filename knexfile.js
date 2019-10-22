@@ -3,14 +3,20 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'pg',
     useNullAsDefault:true,
     connection: {
-      filename: './data/dev.sqlite3'
+      //filename: '.data/foxy_keto.pg',
+      database: "foxyKeto",
+      user: "postgres",
+      password: "taylordev"
     },
     migrations:{
       directory:'./data/migrations'
-    }  
+    },
+    seeds:{
+      directory: './data/seeds'
+    }
   },
 
   staging: {
